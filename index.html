@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meu Site - Estrutura Base</title>
+  <meta name="description" content="Estrutura base de um site HTML5 criada pelo Copilot.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Meu Site</h1>
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Bem-vindo</h2>
+      <p>Esta é a estrutura base do site HTML5. Substitua este conteúdo pelo seu projeto.</p>
+    </section>
+
+    <section>
+      <h2>Sobre</h2>
+      <p>Descrição breve sobre o site.</p>
+    </section>
+
+    <section>
+      <h2>Exemplo de música</h2>
+      <!-- Lista será preenchida dinamicamente por js/main.js -->
+      <div id="lista-de-musicas" class="lista-musicas" aria-live="polite">
+        <!-- Fallback estático para navegadores sem JS -->
+        <noscript>
+          <article class="musica-card" aria-label="Card de música">
+            <img class="cover" src="https://via.placeholder.com/300" alt="Capa da música">
+            <div class="info">
+              <h3>Nome da Música</h3>
+              <p class="artist">Nome do Artista</p>
+            </div>
+            <button class="play" aria-label="Tocar">▶</button>
+          </article>
+        </noscript>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Meu Site</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
